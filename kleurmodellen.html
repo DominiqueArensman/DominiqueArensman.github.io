@@ -94,42 +94,68 @@
 
 </body>
 </html>
-</html>
-    <title>Simplified Horizontal Menu</title>
+<html>
+<head>
+    <title>Pagina met Menu en Gecentreerde Tekst</title>
     <style>
-      nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        background-color: white;
-      }
+        body {
+            margin: 0;
+            height: 100vh; /* Volledige hoogte van de viewport */
+            display: flex;
+            flex-direction: column; /* Verticale richting */
+            background-image: url('background.jpg'); /* Achtergrondafbeelding */
+            background-size: cover;
+            background-position: center;
+        }
 
-      nav ul li {
-        margin: 0 15px;
-      }
+        nav {
+            background-color: white; /* Menu achtergrondkleur */
+            padding: 10px; /* Ruimte rond het menu */
+        }
 
-      nav ul li a {
-        text-decoration: none;
-        color: black;
-        font-size: 24px;
-      }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Horizontaal centreren */
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+        }
+
+        .centered-text {
+            flex-grow: 1; /* Laat de tekst de beschikbare ruimte innemen */
+            display: flex; /* Flexbox voor de tekst */
+            justify-content: center; /* Horizontaal centreren */
+            align-items: center; /* Verticaal centreren */
+            color: white; /* Kleur van de tekst */
+            text-shadow: 2px 2px 4px black; /* Schaduw voor beter zichtbaarheid */
+            font-size: 36px; /* Grootte van de tekst */
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
 
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="binairstelsel.html">Mijn sporten</a></li>
-        <li><a href="kleurmodellen.html">portfolio</a></li>
-      </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="binairstelsel.html">Binair Stelsel</a></li>
+            <li><a href="kleurmodellen.html">Portfolio</a></li>
+        </ul>
     </nav>
 
-  </body>
+    <div class="centered-text">Dit is de tekst in het midden onder het menu!</div>
+
+</body>
 </html>
-  </head>
  
 </html>
 
