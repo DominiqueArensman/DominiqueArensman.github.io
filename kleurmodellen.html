@@ -5,70 +5,96 @@
     <meta charset="utf-8">
 
 
+<html>
 <head>
-    <title>Background Example</title>
-    <style>
-      /* Set up the background for the body */
-      body {
-        margin: 0; /* Remove default margin */
-        padding: 0; /* Remove default padding */
-        height: 100vh; /* Full viewport height */
-        background-image: url('bacground 3.jpg'); /* Path to your image */
-        background-size: cover; /* Make sure the image covers the whole page */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Prevent the image from repeating */
-      }
-    </style>
-</head>
-<body>
-      <title>Page with Pictograms</title>
+    <title>Wolken met Tekst "Opdracht"</title>
     <style>
         body {
-            text-align: center;
             margin: 0;
-            padding: 0;
+            height: 100vh;
+            background-image: url('background.jpg'); /* Achtergrondafbeelding */
+            background-size: cover;
+            background-position: center;
+            position: relative;
         }
-        .pictogram-container {
-            display: inline-block;
-            margin: 10px;
+
+        /* Algemene stijl voor elke wolk */
+        .cloud {
+            position: absolute;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            text-shadow: 2px 2px 4px black;
         }
-        .pictogram-container img {
-            width: 210px; /* Adjust the size of the pictograms */
-            height: 210px;
+
+        .cloud img {
+            width: 150px; /* Pas de grootte van de afbeelding aan */
         }
+
+        .cloud-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none; /* Maakt de tekst niet-klikbaar */
+        }
+
+        /* Posities van de wolken */
+        .cloud1 { top: 5%; left: 10%; }
+        .cloud2 { top: 5%; right: 10%; }
+        .cloud3 { top: 25%; left: 15%; }
+        .cloud4 { top: 25%; right: 15%; }
+        .cloud5 { bottom: 25%; left: 10%; }
+        .cloud6 { bottom: 25%; right: 10%; }
+        .cloud7 { bottom: 5%; left: 15%; }
+        .cloud8 { bottom: 5%; right: 15%; }
     </style>
 </head>
 <body>
 
-    <h1>portfolio</h1>
+    <!-- Acht wolken met tekst "Opdracht" -->
+    <div class="cloud cloud1">
+        <img src="cloud.png" alt="Wolk">
+        <div class="cloud-text">Opdracht</div>
+    </div>
 
-    <!-- 8 Pictograms with links -->
-    <div class="pictogram-container">
-        <a href="link1.html"><img src="cloud.png" alt="Icon 1"></a>
+    <div class="cloud cloud2">
+        <img src="cloud.png" alt="Wolk">
+        <div class="cloud-text">Opdracht</div>
     </div>
-    <div class="pictogram-container">
-        <a href="link2.html"><img src="cloud.png" alt="Icon 2"></a>
+
+    <div class="cloud cloud3">
+        <img src="cloud.png" alt="Wolk">
+        <div class="cloud-text">Opdracht</div>
     </div>
-    <div class="pictogram-container">
-        <a href="link3.html"><img src="cloud.png" alt="Icon 3"></a>
+
+    <div class="cloud cloud4">
+        <img src="cloud.png" alt="Wolk">
+        <div class="cloud-text">Opdracht</div>
     </div>
-    <div class="pictogram-container">
-        <a href="link4.html"><img src="cloud.png" alt="Icon 4"></a>
+
+    <div class="cloud cloud5">
+        <img src="cloud.png" alt="Wolk">
+        <div class="cloud-text">Opdracht</div>
     </div>
-    <div class="pictogram-container">
-        <a href="link5.html"><img src="cloud.png" alt="Icon 5"></a>
+
+    <div class="cloud cloud6">
+        <img src="cloud.png" alt="Wolk">
+        <div class="cloud-text">Opdracht</div>
     </div>
-    <div class="pictogram-container">
-        <a href="link6.html"><img src="cloud.png" alt="Icon 6"></a>
+
+    <div class="cloud cloud7">
+        <img src="cloud.png" alt="Wolk">
+        <div class="cloud-text">Opdracht</div>
     </div>
-    <div class="pictogram-container">
-        <a href="link7.html"><img src="cloud.png" alt="Icon 7"></a>
-    </div>
-    <div class="pictogram-container">
-        <a href="link8.html"><img src="cloud.png" alt="Icon 8"></a>
+
+    <div class="cloud cloud8">
+        <img src="cloud.png" alt="Wolk">
+        <div class="cloud-text">Opdracht</div>
     </div>
 
 </body>
+</html>
 </html>
     <title>Simplified Horizontal Menu</title>
     <style>
